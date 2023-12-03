@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sample</title>
+</head>
+
+<body>
+  <a href="../../home.html">← 戻る</a>
+  <h1>Sample API</h1>
+
+  <div id="userContainer">
+
+  </div>
+  <button onclick="addUserBlock()">ブロックを追加する</button>
+  <button onclick="createJSON()">Jsonファイルを生成する</button>
+
+  <!-- ユーザーデータのテンプレート -->
+  <template id="userTemplate">
+    <div class="user-block" style="background-color: #00FF33; margin-bottom: 30px;">
+      <div>
+        <span>id : </span>
+        <input type="number" class="user_id" min="1" max="100" />
+      </div>
+
+      <div>
+        <span>name : </span>
+        <input type="text" class="user_name" value="taro" />
+      </div>
+
+      <div>
+        <span>age : </span>
+        <input type="number" class="user_age" min="1" max="100" />
+      </div>
+
+      <div>
+        <span>email : </span>
+        <input type="email" class="user_email" pattern=".+@.+\..+" value="aaa@example.com" />
+      </div>
+
+      <div>
+        <span>sex : </span>
+        <select class="user_sex" name="user_sex">
+          <option value="Men">Men</option>
+          <option value="Women">Women</option>
+        </select>
+      </div>
+
+      <div>
+        <div>address : </div>
+        <div>
+          <div style="margin-left: 40px;">
+            <span>street : </span>
+            <input type="text" class="user_street" value="139 Meron Street" />
+          </div>
+
+          <div style="margin-left: 40px;">
+            <span>city : </span>
+            <input type="text" class="user_city" value="leisureland" />
+          </div>
+
+          <div style="margin-left: 40px;">
+            <span>zipcode : </span>
+            <input type="text" class="user_zipcode" value="24680" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </template>
+</body>
+<script src="../js/user.js"></script>
+
+</html>

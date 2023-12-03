@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Alice",
+    "age": "28",
+    "email": "alice@example.com",
+    "sex": "Women",
+    "address": {
+      "street": "123 Apple Street",
+      "city": "Wonderland",
+      "zipcode": "12345"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Takashi",
+    "age": "30",
+    "email": "takashi@example.com",
+    "sex": "Men",
+    "address": {
+      "street": "456 Orange Street",
+      "city": "Dreamland",
+      "zipcode": "67890"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Mike",
+    "age": "32",
+    "email": "mike@example.com",
+    "sex": "Men",
+    "address": {
+      "street": "789 Banana Street",
+      "city": "Adventureland",
+      "zipcode": "13579"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Erina",
+    "age": "27",
+    "email": "erina@example.com",
+    "sex": "Women",
+    "address": {
+      "street": "012 Grape Street",
+      "city": "leisureland",
+      "zipcode": "54321"
+    }
+  }
+]
