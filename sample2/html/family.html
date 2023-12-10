@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Family</title>
+  </head>
+  <body>
+    <a href="../../home.html">← 戻る</a>
+    <h1>Family API</h1>
+
+    <div id="container"></div>
+
+    <div style="margin: 30px;">
+      <button onclick="addFullBlock()">ブロックを追加する</button>
+      <button onclick="createJson()">Jsonファイルを生成する</button>
+    </div>
+
+    <!-- template -->
+    <template id="fullTemplate">
+      <div>
+        <!-- id -->
+        <div>
+          <span>id : </span>
+          <input type="text" class="family_id" />
+          <span>【必須】</span>
+        </div>
+
+        <!-- father -->
+        <div>
+          <input type="checkbox" class="fatherCheck" checked />
+          <span>father : </span>
+          <div class="father">
+            <div style="margin-left: 40px;">
+              <span>f_name : </span>
+              <input type="text" class="f_name" />
+            </div>
+            <div style="margin-left: 40px;">
+              <span>f_age : </span>
+              <input type="text" class="f_age" />
+            </div>
+          </div>
+        </div>
+
+        <!-- mother -->
+        <div>
+          <input type="checkbox" class="motherCheck" checked />
+          <span>mother : </span>
+          <div class="mother">
+            <div style="margin-left: 40px;">
+              <span>m_name : </span>
+              <input type="text" class="m_name" />
+            </div>
+            <div style="margin-left: 40px;">
+              <span>m_age : </span>
+              <input type="text" class="m_age" />
+            </div>
+          </div>
+        </div>
+
+        <!-- child -->
+        <div>
+          <input type="checkbox" class="childrenCheck" checked />
+          <span>children : </span>
+          <div class="children">
+
+          </div>
+          <button class="children-button" style="margin-left: 40px;">Childrenブロックを追加する</button>
+        </div>
+      </div>
+    </template>
+    
+    <!-- childの配列内 -->
+    <template id="childrenTemplate">
+      <div style="margin-left: 40px; margin-bottom: 15px;" class="childBlock">
+        <div>
+          <span>sex : </span>
+          <input type="text" class="sex" />
+        </div>
+        <div>
+          <span>c_name : </span>
+          <input type="text" class="c_name" />
+        </div>
+        <div>
+          <span>c_age : </span>
+          <input type="text" class="c_age" />
+        </div>
+      </div>
+    </template>
+
+    <script src="../js/family.js"></script>
+  </body>
+</html>
